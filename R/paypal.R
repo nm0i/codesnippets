@@ -2,6 +2,6 @@
 
 read.paypal <- function(...) {
     tmptable <- read.csv(...);
-    tmptable$Amount <- gsub(",", "", A$Amount);
+    tmptable$Amount <- gsub(",", "", tmptable$Amount);
     tmptable;
 }
